@@ -10,6 +10,7 @@ import Register from "./registration";
 import Home from "./Home";
 
 
+
 class Main extends Component {
 	render()  {
 		return (
@@ -18,13 +19,13 @@ class Main extends Component {
           <h1>Welcome to Influence app.</h1>
           <ul className="header">
             <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/stuff">Login</NavLink></li>
-            <li><NavLink to="/contact">Register</NavLink></li>
+            <li><NavLink to="/Login">Login</NavLink></li>
+            <li><NavLink to="/Register">Register</NavLink></li>
           </ul>
           <div className="content">
             <Route exact path="/" component={Home}/>
-            <Route path="/stuff" component={Login}/>
-            <Route path="/contact" component={Register}/>
+            <Route path="/Login" component={Login}/>
+            <Route path="/Register" component={Register}/>
           </div>
         </div>
       </HashRouter>
